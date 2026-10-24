@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #D8BA72;
+    --color-brown-dark: #4E3630;
+    --color-brown-logo: #432A1B;
+    --color-hairline: #C9C9C9;
+    --color-outline: #BDBDBD;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  body {
+    font-family: var(--font-inter), "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    overflow-x: clip;
+  }
+
+  p, span, a, button, input, select, textarea, div {
+    font-family: inherit;
+  }
+}
+
+/* Custom Utilities for FURNI.TURE Scandinavian Aesthetic */
+.font-script {
+  font-family: var(--font-yellowtail), "Brush Script MT", cursive;
+}
+
+/* Diagonal chamfered corner for gold buttons */
+.btn-chamfer {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+}
+
+.btn-chamfer-percent {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 92% 100%, 0 100%);
+}
+
+/* Stroke only transparent outline text */
+.text-stroke-outline {
+  -webkit-text-stroke: 1px #BDBDBD;
+  color: transparent;
+  user-select: none;
+}
+
+.text-stroke-outline-thick {
+  -webkit-text-stroke: 1.5px #BDBDBD;
+  color: transparent;
+  user-select: none;
+}
+
+.text-stroke-outline-thin {
+  -webkit-text-stroke: 0.75px #BDBDBD;
+  color: transparent;
+  user-select: none;
+}
+
+/* White stroke for dark backgrounds */
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  color: transparent;
+}
+
+/* Rolling counter digit slot machine */
+.slot-digit-container {
+  overflow: hidden;
+  display: inline-block;
+  height: 1em;
+  line-height: 1em;
+}
+
+/* Smooth selection */
+::selection {
+  background: #D8BA72;
+  color: #FFFFFF;
+}
+
+/* Hide scrollbar for clean luxury presentation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "FURNI.TURE - Scandinavian Interior Design Studio",
+  "description": "Minimal, editorial, luxury Scandinavian interior design studio showcasing turnkey renovation, sauna design, apartment architecture, and customized estimates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
